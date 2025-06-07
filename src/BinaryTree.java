@@ -47,19 +47,19 @@ class BinaryTree {
     }
 
     // Method to perform in-order traversal
-//    void inOrder() {
-//        inOrderRec(root);  // Call recursive in-order method
-//        System.out.println();  // Print newline for readability
-//    }
-//
-//    // Recursive helper method for in-order traversal
-//    void inOrderRec(Node root) {
-//        if (root != null) {
-//            inOrderRec(root.left);        // Traverse left subtree
-//            System.out.print(root.data + " "); // Visit node
-//            inOrderRec(root.right);       // Traverse right subtree
-//        }
-//    }
+    void inOrder() {
+        inOrderRec(root);  // Call recursive in-order method
+        System.out.println();  // Print newline for readability
+    }
+
+    // Recursive helper method for in-order traversal
+    void inOrderRec(Node root) {
+        if (root != null) {
+            inOrderRec(root.left);        // Traverse left subtree
+            System.out.print(root.data + " "); // Visit node
+            inOrderRec(root.right);       // Traverse right subtree
+        }
+    }
 
     // Main method to test the binary tree
     public static void main(String[] args) {
@@ -76,6 +76,6 @@ class BinaryTree {
 
         // Perform in-order traversal
         System.out.println("In-order traversal of the binary tree:");
-//        tree.inOrder();
+        tree.inOrder();
     }
 }
